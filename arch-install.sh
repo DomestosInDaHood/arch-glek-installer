@@ -4,7 +4,7 @@
 setfont cyr-sun16
 
 # Проверка загружаемого режима
-if [[ ls /sys/firmware/efi/efivars ]]
+if ls /sys/firmware/efi/efivars &> /dev/null
 then 
 	bootMode="efi"
 	echo "Archiso загружен в режиме EFI"
