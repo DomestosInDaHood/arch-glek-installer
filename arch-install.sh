@@ -11,3 +11,4 @@ then
 else 
 	bootMode = "bios"
 	echo "Archiso загружен в режиме BIOS"
+fi
